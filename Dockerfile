@@ -12,8 +12,8 @@
 #  License for the specific language governing permissions and limitations under
 #  the License.
 ARG DOCKER_ORG="usdotfhwastoldev"
-ARG DOCKER_TAG="develop-humble"
-FROM ${DOCKER_ORG}/autoware.ai:${DOCKER_TAG} as base_image
+ARG DOCKER_TAG="develop"
+FROM ${DOCKER_ORG}/autoware.ai-test:${DOCKER_TAG} as base_image
 FROM base_image as setup
 ARG GIT_BRANCH="develop"
 ARG PACKAGES=""
